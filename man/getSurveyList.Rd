@@ -13,11 +13,9 @@ A character vector.
 Get a list of all survey acronyms.
 }
 \examples{
+\dontrun{
 getSurveyList()
-
 }
-\author{
-Colin Millar.
 }
 \seealso{
 \code{\link{getSurveyYearList}}, \code{\link{getSurveyYearQuarterList}}, and
@@ -25,4 +23,6 @@ Colin Millar.
 
 \code{\link{icesDatras-package}} gives an overview of the package.
 }
-
+\author{
+Colin Millar.
+}

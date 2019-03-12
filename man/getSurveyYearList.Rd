@@ -16,11 +16,9 @@ A numeric vector.
 Get a list of all data years for a given survey.
 }
 \examples{
+\dontrun{
 getSurveyYearList(survey = "ROCKALL")
-
 }
-\author{
-Colin Millar.
 }
 \seealso{
 \code{\link{getSurveyList}}, \code{\link{getSurveyYearQuarterList}}, and
@@ -28,4 +26,6 @@ Colin Millar.
 
 \code{\link{icesDatras-package}} gives an overview of the package.
 }
-
+\author{
+Colin Millar.
+}

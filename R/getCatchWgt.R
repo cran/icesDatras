@@ -10,7 +10,7 @@
 #' @return A data frame.
 #'
 #' @note
-#' The \pkg{icesAdvice} package provides \code{findAphia}, a function to look up Aphia species codes.
+#' The \pkg{icesVocab} package provides \code{findAphia}, a function to look up Aphia species codes.
 #'
 #' @seealso
 #' \code{\link{getSurveyYearList}}, \code{\link{getSurveyYearQuarterList}}, and
@@ -18,15 +18,14 @@
 #'
 #' \code{\link{icesDatras-package}} gives an overview of the package.
 #'
-#' @author Colin Millar.
-#'
 #' @examples
+#' \dontrun{
 #' getCatchWgt(survey = "ROCKALL", years = 2002, quarters = 3, aphia = 126437)
 #'
 #' # look up specific species
 #' aphia <- icesVocab::findAphia(c("cod", "haddock"))
 #' cwt <- getCatchWgt(survey = "ROCKALL", years = 2002, quarters = 3, aphia = aphia)
-#'
+#' }
 #' @export
 
 getCatchWgt <- function(survey, years, quarters, aphia) {

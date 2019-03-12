@@ -23,13 +23,11 @@ This function combines the functionality of getHHdata, getHLdata, and getCAdata.
 It supports querying many years and quarters in one function call.
 }
 \examples{
+\dontrun{
 hhdata <- getDATRAS(record = "HH", survey = "ROCKALL", years = 2002, quarters = 3)
 hldata <- getDATRAS(record = "HL", survey = "ROCKALL", years = 2002, quarters = 3)
 cadata <- getDATRAS(record = "CA", survey = "ROCKALL", years = 2002, quarters = 3)
-
 }
-\author{
-Scott Large and Colin Millar.
 }
 \seealso{
 \code{\link{getHHdata}}, \code{\link{getHLdata}}, and \code{\link{getCAdata}}
@@ -37,4 +35,6 @@ get haul data, length-based data, and age-based data.
 
 \code{\link{icesDatras-package}} gives an overview of the package.
 }
-
+\author{
+Scott Large and Colin Millar.
+}

@@ -20,6 +20,7 @@ A data frame.
 Get haul data such as position, depth, sampling method, etc.
 }
 \examples{
+\dontrun{
 hhdata <- getHHdata(survey = "ROCKALL", year = 2002, quarter = 3)
 str(hhdata)
 
@@ -27,10 +28,7 @@ str(hhdata)
 hhdata <- getHHdata(survey = "NS_IBTS", year = 2016, quarter = 1)
 hhdata <- getHHdata(survey = "NS-IBTS", year = 2030, quarter = 1)
 hhdata <- getHHdata(survey = "NS-IBTS", year = 2016, quarter = 6)
-
 }
-\author{
-Colin Millar.
 }
 \seealso{
 \code{\link{getDATRAS}} supports querying many years and quarters in one function call.
@@ -40,4 +38,6 @@ age-based data.
 
 \code{\link{icesDatras-package}} gives an overview of the package.
 }
-
+\author{
+Colin Millar.
+}
