@@ -20,7 +20,7 @@
 #'
 #' @examples
 #' \dontrun{
-#' flex <- getFlexFile(survey = "ROCKALL", year = 2002, quarter = 3)
+#' flex <- getFlexFile(survey = "NS-IBTS", year = 2020, quarter = 1)
 #' str(flex)
 #'
 #' # error checking examples:
@@ -44,7 +44,7 @@ getFlexFile <- function(survey, year, quarter) {
   # read url and parse to data frame
   url <-
     sprintf(
-      "https://datras.ices.dk/WebServices/DATRASWebService.asmx/getHHdata?survey=%s&year=%i&quarter=%i",
+      "https://datras.ices.dk/WebServices/DATRASWebService.asmx/getFlexFile?survey=%s&year=%i&quarter=%i",
       survey, year, quarter)
   out <- readDatras(url)
   out <- parseDatras(out)
